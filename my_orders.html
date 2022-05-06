@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+    <style>
+        :root {
+            font-size: 62.5%;
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+        body{
+        font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /*   CONTENEDOR PRINCIPAL   */
+    .my-order{
+        width: 300px;
+        padding-top: 80px;
+    }
+
+    /*       TITULO      */
+    .my-order-title{
+        font-size: var(--lg);
+        margin-bottom: 40px;
+    }
+
+    /*   FECHA - ARTICULOS - TOTAL   */
+    .my-order-content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+    .my-order-content p:first-child{
+        display: flex;
+        flex-direction: column;
+    }
+    .date{
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .check{
+        display: flex;
+        align-items: center;
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .arrow{
+        height: 9px;
+        width: 7px;
+        padding-left: 20px;
+    }
+    .articles{
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+    }
+
+    /*    PRODUCTOS    */
+</style>
+</head>
+<body>
+   <main class="my-order">
+    <h1 class="my-order-title">My orders</h1>
+    <div class="my-order-container">
+        <div class="my-order-content">
+            <p>
+                <span class="date">04.09.2022</span>
+                <span class="articles">6 articles</span>
+            </p>
+            <div class="check">
+            <p class="check-number">$ 560</p>
+            <img class="arrow" src="./icons/flechita.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+    <div class="my-order-container">
+        <div class="my-order-content">
+            <p>
+                <span class="date">04.09.2022</span>
+                <span class="articles">6 articles</span>
+            </p>
+            <div class="check">
+            <p class="check-number">$ 560</p>
+            <img class="arrow" src="./icons/flechita.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+    <div class="my-order-container">
+        <div class="my-order-content">
+            <p>
+                <span class="date">04.09.2022</span>
+                <span class="articles">6 articles</span>
+            </p>
+            <div class="check">
+            <p class="check-number">$ 560</p>
+            <img class="arrow" src="./icons/flechita.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+</main>
+</body>

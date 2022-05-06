@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+    <style>
+        :root {
+            font-size: 62.5%;
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+        body{
+        font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /*   CONTENEDOR PRINCIPAL   */
+    .my-order{
+        width: 300px;
+        padding-top: 80px;
+    }
+
+    /*       TITULO      */
+    .my-order-title{
+        font-size: var(--lg);
+        margin-bottom: 40px;
+    }
+
+    /*   FECHA - ARTICULOS - TOTAL   */
+    .my-order-content{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--text-input-field);
+        border-radius: 8px;
+        padding: 8px 24px;
+        margin-bottom: 20px;
+    }
+    .my-order-content p:first-child{
+        display: flex;
+        flex-direction: column;
+    }
+    .date{
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .check{
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .articles{
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+    }
+
+    /*    PRODUCTOS    */
+    .product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px 24px 0px;
+    }
+    .product div{
+        display: flex;
+        align-items: center;
+    }
+    .product-img{
+        width: 72px;
+        height: 72px;
+        margin-right: 10px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .product-name{
+        font-size: var(--md);
+        color: var(--very-light-pink);
+    }
+    .product-price{
+        font-size: var(--md);
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+   <main class="my-order">
+    <h1 class="my-order-title">My order</h1>
+    <div class="my-order-container">
+        <div class="my-order-content">
+            <p>
+                <span class="date">04.09.2022</span>
+                <span class="articles">6 articles</span>
+            </p>
+            <p class="check">$ 560</p>
+        </div>
+    </div>
+    <div class="shopping-cart">
+        <div>
+        <figure class="product">
+            <div>
+            <img src="./imgs/bike.jpeg" alt="bike" class="product-img">
+            <p class="product-name">Bike</p>
+            </div>
+            <p class="product-price">$120</p>
+        </figure>
+        </div>
+        <div>
+        <figure class="product">
+            <div>
+            <img src="./imgs/bike.jpeg" alt="bike" class="product-img">
+            <p class="product-name">Bike</p>
+            </div>
+            <p class="product-price">$120</p>
+        </figure>
+        </div>
+        <div>
+        <figure class="product">
+            <div>
+            <img src="./imgs/bike.jpeg" alt="bike" class="product-img">
+            <p class="product-name">Bike</p>
+            </div>
+            <p class="product-price">$120</p>
+        </figure>
+        </div>

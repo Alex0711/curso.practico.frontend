@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+    <style>
+        :root {
+            font-size: 62.5%;
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+        }
+        body{
+        font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    /*   CONTENEDOR PRINCIPAL   */
+    .my-order{
+        width: 310px;
+        padding: 20px;
+    }
+
+    /*       TITULO      */
+    .title{
+        display: flex;
+    }
+    .my-order-title{
+        font-size: var(--lg);
+    }
+    .title img{
+        transform: rotate(180deg);
+        margin-right: 14px;
+    }
+
+    /*    PRODUCTOS    */
+    .product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px 24px 0px;
+    }
+    .product div{
+        display: flex;
+        align-items: center;
+    }
+    .product-img{
+        width: 72px;
+        height: 72px;
+        margin-right: 10px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .product-name{
+        font-size: var(--md);
+        color: var(--very-light-pink);
+    }
+    .product-price{
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .close{
+        margin-left: 8px;
+    }
+    .close:hover{
+        cursor: pointer;
+    }
+
+/*   FECHA - ARTICULOS - TOTAL   */
+    .my-order-container{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--text-input-field);
+        border-radius: 8px;
+        padding: 0 24px;
+        margin-bottom: 20px;
+        font-size: var(--md);
+        font-weight: bold;
+    }
+    .my-order-content p:first-child{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*   BOTON   */
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer; /*Hace la manito*/
+    font-size: var(--md);
+    font-weight: bold;
+    height: 48px;
+}
+</style>
+</head>
+<body>
+   <main class="my-order">
+    <div class="title"> 
+    <img src="./icons/flechita.svg" alt="arrow">
+    <h1 class="my-order-title">Shopping cart</h1>
+    </div>
+    <div class="shopping-cart">
+        <div>
+            <figure class="product">
+                <div>
+                <img src="./imgs/bike.jpeg" alt="bike" class="product-img">
+                <p class="product-name">Bike</p>
+                </div>
+                <div>
+                    <p class="product-price">$120</p>
+                    <img src="./icons/icon_close.png" alt="close" class="close">
+                </div>
+            </figure>
+            <figure class="product">
+                <div>
+                <img src="./imgs/bike.jpeg" alt="bike" class="product-img">
+                <p class="product-name">Bike</p>
+                </div>
+                <div>
+                    <p class="product-price">$120</p>
+                    <img src="./icons/icon_close.png" alt="close" class="close">
+                </div>
+            </figure>
+            <figure class="product">
+                <div>
+                <img src="./imgs/bike.jpeg" alt="bike" class="product-img">
+                <p class="product-name">Bike</p>
+                </div>
+                <div>
+                    <p class="product-price">$120</p>
+                    <img src="./icons/icon_close.png" alt="close" class="close">
+                </div>
+            </figure>
+        </div>
+        <div class="my-order-container">
+            <p>Total</p>
+            <p>$ 560</p>
+        </div>
+        <button class="primary-button">Checkout</button>
+    </main>
+</body>
